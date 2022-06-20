@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(184, 109, 255);
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.profile .card {
+  width: 50rem;
+  height: 20rem;
+  background-color: rgb(194, 137, 246);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 0px 0 rgb(172, 87, 251);
+}
+.profile .card .profile-img {
+  width: 20%;
+  padding: 20px;
+}
+.profile .card .profile-img img {
+  width: 60%;
+  border-radius: 50%;
+  border: 12px solid rgb(189, 124, 250);
+  box-shadow: 0px 0px 8px rgb(152, 54, 244);
+}
+.profile .card .details {
+  width: 60%;
+  padding-right: 10px;
+}
+.profile .card .details h1 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.profile .card .details span {
+  font-size: 0.8em;
+  color: brown;
+  text-transform: capitalize;
+}
+.profile .card .details p {
+  font-size: 0.9em;
+  color: rgb(105, 66, 66);
+}
+.profile .card .links li {
+  padding: 8px 0;
+}
+.profile .card .links li a {
+  color: rgba(169, 55, 55, 0.9);
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
+.profile .card .links li a:hover {
+  color: rgb(161, 7, 7);
+}
+
+@media only screen and (min-width: 425px) and (max-width: 850px) {
+  .profile .card {
+    flex-direction: column;
+    width: 23rem;
+    height: 40rem;
+    justify-content: center;
+  }
+  .profile .card .profile-img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+  .profile .card .profile-img img {
+    width: 100%;
+  }
+  .profile .card .details {
+    text-align: center;
+  }
+  .profile .card .details h1 {
+    font-size: 1.6em;
+  }
+  .profile .card .links ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(207, 158, 253, 0.739);
+    box-shadow: 2px 2px 0px rgb(182, 104, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+  .profile .card .links ul li {
+    padding: 0 12px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .profile .card {
+    flex-direction: column;
+    width: 21rem;
+    height: 40rem;
+    justify-content: center;
+  }
+  .profile .card .profile-img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+  .profile .card .profile-img img {
+    width: 100%;
+  }
+  .profile .card .details {
+    text-align: center;
+  }
+  .profile .card .details h1 {
+    font-size: 1.6em;
+  }
+  .profile .card .links ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(207, 158, 253, 0.739);
+    box-shadow: 2px 2px 0px rgb(182, 104, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+  .profile .card .links ul li {
+    padding: 0 12px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .profile .card {
+    flex-direction: column;
+    width: 18rem;
+    height: 35rem;
+    justify-content: center;
+  }
+  .profile .card .profile-img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+  .profile .card .profile-img img {
+    width: 100%;
+  }
+  .profile .card .details {
+    text-align: center;
+  }
+  .profile .card .details h1 {
+    font-size: 1.2em;
+  }
+  .profile .card .links ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(207, 158, 253, 0.739);
+    box-shadow: 2px 2px 0px rgb(182, 104, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+  .profile .card .links ul li {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .profile .card {
+    flex-direction: column;
+    width: 12rem;
+    height: 25rem;
+    justify-content: center;
+  }
+  .profile .card .profile-img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+  .profile .card .profile-img img {
+    width: 80%;
+  }
+  .profile .card .details {
+    text-align: center;
+  }
+  .profile .card .details h1 {
+    font-size: 0.6em;
+  }
+  .profile .card .details span {
+    font-size: 0.5em;
+  }
+  .profile .card .details p {
+    font-size: 0.6em;
+  }
+  .profile .card .links ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(207, 158, 253, 0.739);
+    box-shadow: 2px 2px 0px rgb(182, 104, 255);
+    border-radius: 30px;
+    padding: 5px 15px;
+  }
+  .profile .card .links ul li {
+    padding: 0 5px;
+  }
+  .profile .card .links ul li a {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=styles.css.map */
